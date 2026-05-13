@@ -1,7 +1,12 @@
-# apps/admin — Next.js Frontend
+# apps/admin — Next.js Internal Dashboard
 
 # Inherits all rules from root CLAUDE.md.
-# Rules here are specific to the Next.js frontend app.
+# Rules here are specific to the internal admin dashboard app.
+
+## Purpose
+The admin dashboard is the internal management tool for store operators.
+It covers order management, inventory, CMS, shipping, and reporting.
+It is NOT customer-facing — optimize for functionality and clarity, not aesthetics.
 
 ## Stack
 - Next.js App Router (no Pages Router — never use pages/)
@@ -15,7 +20,7 @@
 apps/admin/
   app/
     (auth)/               Auth routes (sign-in, sign-up)
-    (dashboard)/          Protected routes — all ERP pages live here
+    (dashboard)/          Protected routes — all admin pages live here
       layout.tsx          Dashboard shell (Antd Layout: Sider, Header, Content)
       [module]/           One folder per domain module
         page.tsx          List/index view
@@ -27,7 +32,7 @@ apps/admin/
     api/                  Typed API service functions (one file per module)
     hooks/                Custom React hooks
     utils/                Helper functions
-  types/                  Frontend-only types (import shared types from packages/types)
+  types/                  Admin-only types (import shared types from packages/types)
 
 ## Component Rules
 - Default to Server Components — only add "use client" when necessary
@@ -120,7 +125,7 @@ export const productApi = {
 - Transactional modules → full page always
 
 ## Label Mapping
-- `lib/labels/[entity].ts` is the single source of truth for all Indonesian display labels per entity.
+- lib/labels/[entity].ts is the single source of truth for all Indonesian display labels per entity.
 - Never hardcode Indonesian labels inline in components, table columns, or form fields.
 
 ## What Claude should always ask before doing
