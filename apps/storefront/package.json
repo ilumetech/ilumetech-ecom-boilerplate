@@ -9,8 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^7.2.7",
     "@ilumetech/types": "workspace:*",
     "@ilumetech/utils": "workspace:*",
+    "@tanstack/react-query": "^5.100.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.14.0",
