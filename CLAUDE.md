@@ -1,7 +1,7 @@
 # IlumeTech Boilerplate — CLAUDE.md
 
 # This is the root CLAUDE.md for all IlumeTech client projects.
-# Subdirectory CLAUDE.md files exist at /apps/web and /apps/api
+# Subdirectory CLAUDE.md files exist at /apps/admin and /apps/api
 # for frontend and backend specific rules.
 
 ## Project Overview
@@ -45,7 +45,7 @@ Do NOT add orgId/tenantId scoping to queries — isolation is at the DB level.
 
 ## Folder Structure
 apps/
-  web/          Next.js frontend (see /apps/web/CLAUDE.md)
+  admin/        Next.js frontend (see /apps/admin/CLAUDE.md)
   api/          NestJS backend (see /apps/api/CLAUDE.md)
 packages/
   types/        Shared TypeScript interfaces and enums
@@ -82,7 +82,7 @@ packages/
 ## Environment Variables
 - .env files are gitignored — never commit secrets
 - .env.example must be updated whenever a new env var is added
-- Required vars documented in /apps/api/.env.example and /apps/web/.env.example
+- Required vars documented in /apps/api/.env.example and /apps/admin/.env.example
 
 ## Out of scope for this boilerplate
 - Do not add CMS, blog, or SEO features to ERP projects

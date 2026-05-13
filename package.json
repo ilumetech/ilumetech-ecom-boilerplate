@@ -1,5 +1,5 @@
 {
-  "name": "ilumetech-erp-boilerplate",
+  "name": "ilumetech-ecom-boilerplate",
   "private": true,
   "workspaces": [
     "apps/*",

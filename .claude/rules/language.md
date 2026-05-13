@@ -91,11 +91,11 @@ const productPrice = product.price
 ```
 // WRONG — Indonesian file/folder names
 apps/api/src/produk/produk.service.ts
-apps/web/components/produk/TabelProduk.tsx
+apps/admin/components/produk/TabelProduk.tsx
 
 // CORRECT
 apps/api/src/product/product.service.ts
-apps/web/components/products/ProductTable.tsx
+apps/admin/components/products/ProductTable.tsx
 ```
 
 ## When Claude Generates Code

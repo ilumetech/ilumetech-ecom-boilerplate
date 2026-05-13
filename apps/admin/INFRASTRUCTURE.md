@@ -1,4 +1,4 @@
-# Frontend Infrastructure — apps/web
+# Frontend Infrastructure — apps/admin
 
 This document explains every piece of the frontend foundation: what each file does, why it exists, and how the pieces connect.
 
@@ -36,7 +36,7 @@ This document explains every piece of the frontend foundation: what each file do
 ## 2. Folder Structure
 
 ```
-apps/web/
+apps/admin/
 ├── app/
 │   ├── (auth)/                         Auth routes (not in dashboard shell)
 │   │   ├── sign-in/[[...sign-in]]/

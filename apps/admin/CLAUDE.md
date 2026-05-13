@@ -1,4 +1,4 @@
-# apps/web — Next.js Frontend
+# apps/admin — Next.js Frontend
 
 # Inherits all rules from root CLAUDE.md.
 # Rules here are specific to the Next.js frontend app.
@@ -12,7 +12,7 @@
 - Clerk for auth — use @clerk/nextjs hooks and middleware
 
 ## Folder Structure
-apps/web/
+apps/admin/
   app/
     (auth)/               Auth routes (sign-in, sign-up)
     (dashboard)/          Protected routes — all ERP pages live here
@@ -125,7 +125,7 @@ export const productApi = {
 
 ## What Claude should always ask before doing
 - Adding a new npm dependency
-- Creating a new top-level folder in apps/web/
+- Creating a new top-level folder in apps/admin/
 - Changing the dashboard layout or Antd ConfigProvider theme
 - Adding a new auth flow or changing middleware
 - Overriding Antd component styles globally
