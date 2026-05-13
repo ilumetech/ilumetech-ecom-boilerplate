@@ -9,11 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ilumetech/types": "workspace:*",
+    "@ilumetech/utils": "workspace:*",
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
