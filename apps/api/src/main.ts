@@ -25,7 +25,7 @@ async function bootstrap(): Promise<void> {
   app.useGlobalInterceptors(new ResponseTransformInterceptor());
   app.useGlobalPipes(new ValidationPipe({ transform: true, whitelist: true }));
 
-  await app.listen(process.env.PORT ?? 3001, '0.0.0.0');
+  await app.listen(process.env.PORT ?? 3002, '0.0.0.0');
 }
 
 bootstrap();
